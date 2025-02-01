@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS Breakpoints & Customizing Screens</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    // Custom color
+                    colors: {
+                        myOwnColor: '#c961b6',
+                    }
+                },
+                // Screen breakpoints
+                screens: {
+                    'xs': {'min':'250px', 'max': '380px'},   // Custom extra-small breakpoint
+                    'sm': '540px',
+                    'md': '750px',
+                    'lg': '1000px',
+                    'xl': '1230px',
+                    '2xl': '1500px',
+                }
+            }
+        }
+    </script>
+</head>
+<body class="flex justify-center items-center h-screen">
+    <h2
+        class="text-xl xs:text-lg sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl 
+           text-blue-500 xs:text-gray-500 sm:text-red-500 md:text-green-500 lg:text-yellow-500 xl:text-purple-500 2xl:text-myOwnColor 
+           text-center xs:text-right sm:text-left md:text-center lg:text-right xl:text-left">
+        Hello, Everyone!
+    </h2>
+</body>
+</html>

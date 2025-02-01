@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        myOwnColor: '#c961b6',
+                        anotherColor: 'rgb(51, 125,50)',
+
+                        // custom colors
+                        transparent: 'transparent',
+                        current: 'currentColor',
+                        'black': 'black',
+                        'white': 'white', 
+                        'gray': 'gray',   
+                        'indigo': 'indigo', 
+                        'red': 'red',     
+                        'yellow': 'yellow', 
+                       
+                    }
+                },
+                screens: {
+                    'sm': '640px',
+                    'md': '768px',
+                    'lg': '1024px',
+                    'xl': '1280px',
+                    '2xl': '1300px',  // 1536 to 1400
+                }
+            }
+        }
+    </script>
+    </head>
+    <body>
+        <div class="container mx-auto">
+            <!-- bg-[#64a5db] -->
+            <h2 class="text-xl xs:text-center sm:text-center lg:text-center py-5 lg:py-10 text-indigo bg-yellow">
+                This is Container demo
+            </h2>
+        </div>
+    </body>
+</html>
