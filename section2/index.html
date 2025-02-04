@@ -3,34 +3,57 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://cdn.tailwindcss.com"></script>
         <title>First Website + Landing Page</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {},
+    }
+  }
+</script>
+
     </head>
     <body class="m-0 p-0 box-border">
-        <nav class="bg-blue-400 flex justify-between">
-            <img src="./images/logo.jpg" class="px-2 w-[70px] m-2 rounded-2xl"
-                alt="logo">
-            <ul class="px-20 py-4 space-x-8 flex justify-end">
-                <li
-                    class="relative text-amber-600 cursor-pointer text-xl after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-0.5 after:bg-violet-600 after:transition-all after:duration-300 hover:after:w-full">Home</li>
-                <li
-                    class="relative text-amber-600 cursor-pointer text-xl after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-0.5 after:bg-violet-600 after:transition-all after:duration-300 hover:after:w-full">About</li>
-                <li
-                    class="relative text-amber-600 cursor-pointer text-xl after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-0.5 after:bg-violet-600 after:transition-all after:duration-300 hover:after:w-full">Catalogue</li>
-                <li
-                    class="relative text-amber-600 cursor-pointer text-xl after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-0.5 after:bg-violet-600 after:transition-all after:duration-300 hover:after:w-full">Contact
-                    us</li>
+        <nav class="bg-blue-400 flex justify-between items-center p-4">
+            <span
+                class="flex text-3xl font-bold mx-3 bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 text-transparent bg-clip-text">
+                MySite
+            </span>
 
+            <ul class="space-x-8 flex justify-end">
+                <li
+                    class="relative text-amber-600 cursor-pointer text-xl after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-0.5 after:bg-violet-600 after:transition-all after:duration-300 hover:after:w-full font-bold">Home</li>
+                <li
+                    class="relative text-amber-600 cursor-pointer text-xl after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-0.5 after:bg-violet-600 after:transition-all after:duration-300 hover:after:w-full font-bold">About</li>
+                <li
+                    class="relative text-amber-600 cursor-pointer text-xl after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-0.5 after:bg-violet-600 after:transition-all after:duration-300 hover:after:w-full font-bold">Catalogue</li>
+                <li
+                class="font-bold relative text-amber-600 cursor-pointer text-xl after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-0.5 after:bg-violet-600 after:transition-all after:duration-300 hover:after:w-full">Contact us</li>
             </ul>
         </nav>
-        <main class>
-            <div class="main bg-slate-200 h-96 py-80  pl-8">
-                <div class="text-3xl py-3 ">
-                    Welcome to my first website build by Tailwind!
+
+        <main class="flex justify-around items-center bg-[#f2faf9] py-20">
+            <div class="left w-1/2 pl-8">
+                <div class="text-3xl py-3">
+                    Welcome to my first website built with Tailwind!
                 </div>
-                <p class="w-1/3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Delectus totam reprehenderit exercitationem nihil molestiae
-                    asperiores.</p>
+                <p class="w-2/3 text-lg text-gray-700">Lorem ipsum dolor sit
+                    amet consectetur adipisicing elit. Delectus totam
+                    reprehenderit exercitationem nihil molestiae asperiores.</p>
+
+                <div class="buttons my-4">
+                    <button
+                        class="bg-purple-800 text-white px-4 py-2 rounded-2xl transition duration-300 ease-in-out hover:text-gray-800 hover:bg-violet-400 mx-1 hover:border-2 hover:border-orange-300">Click
+                        Here</button>
+                    <button
+                        class="bg-purple-800 text-white px-4 py-2 rounded-2xl transition duration-300 ease-in-out hover:text-gray-800 hover:bg-violet-400 mx-1 hover:border-2 hover:border-orange-300">Contact
+                        us</button>
+                </div>
+            </div>
+            <div class="right w-1/2 flex justify-center">
+                <img src="./images/bg-image.jpg" alt="image not found"
+                    class="w-1/3 transform scale-x-[-1] rounded-3xl">
             </div>
         </main>
     </body>
