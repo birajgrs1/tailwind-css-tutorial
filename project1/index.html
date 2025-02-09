@@ -7,6 +7,39 @@
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    
+    <!-- Top Section , Large image banner  -->
+    <section class="w-[100%] h-[100vh] bg-[url('/static/images/large-image-first.jpg')]">
+        <div class="w-[100%] h-[100vh] bg-[rgba(0,0,0,0.5)]">
+            <header class="max-w-[1170px] mx-auto">
+                <div class="grid sm:grid-cols-2 grid-cols-[30%_auto] px-[10px] items-center ">
+                    <figure>
+                        <img src="./static/images/logo.svg" alt="Netflix logo" class="w-[150px] m-4">
+                    </figure>
+                    <div class="flex justify-end gap-4">
+                        <select class="px-2 py-1 border border-white bg-black text-white">
+                            <option value="en">English</option>
+                            <option value="ne">नेपाली</option>
+                        </select>
+                        <button class="px-4 py-1 bg-red-600 text-white rounded">
+                            Sign In
+                        </button>
+                    </div>
+                </div>
+            </header>
+
+            <div class="max-w-[1170px] mx-auto sm:py-[150px] text-white py-[50px] text-center">
+                <h1 class="sm:text-[45px] text-[20px]  font-bold">Unlimited movies, TV shows, and more</h1>
+                <h4 class="text-[25px] py-[10px]">Starts at USD 2.99. Cancel anytime.</h4>
+                <p class="text-[20px]">Ready to watch? Enter your email to create or restart your membership.</p>
+
+                <div class="max-w-[700px] mx-auto mt-[30px] sm:px-[10px] px-[40px]">
+                    <form class="grid sm:grid-cols-[70%_auto] grid-cols-1 mx-auto mt-[30px] gap-[20px]"> 
+                        <input type="text" placeholder="Email address" class="border-[1px] h-[50px] pl-[20px] border-[#ccc] bg-transparent">
+                        <button class="bg-red-600 text-white rounded font-[700] py-[15px] hover:bg-[rgb(193, 17, 25)] duration-300 ">Get Started ></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
