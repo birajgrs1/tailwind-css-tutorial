@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition vs Transform</title>
+    <link rel="stylesheet" href="./styles/input.css">
+</head>
+<body>
+
+    <div class="m-[60px] ">
+        <!-- Simple button  -->
+        <button class="p-2 bg-blue-500 text-white m-10 rounded-2xl hover:bg-blue-900">Button1</button>
+
+        <!-- Button with transition simple  -->
+        <button class="p-2 bg-blue-500 text-white m-10 rounded-2xl hover:bg-blue-900 transition duration-1000">Button2</button>
+
+        <!-- Button transition effect with opacity -->
+        <button class="p-2 m-10 bg-blue-500 text-white rounded-2xl hover:opacity-5">Button3</button>
+
+        <!-- Rotate button -->
+        <button class="p-2 bg-blue-500 text-white m-10 rounded-2xl rotate-45">Button4</button>
+        <button class="p-2 bg-blue-500 text-white m-10 rounded-2xl hover:rotate-45 transition-transform duration-300">Button5</button>
+
+        <!-- Scaling button  -->
+        <button class="p-2 bg-blue-500 text-white m-10 rounded-2xl hover:scale-90 transition-transform duration-300">Button6</button>
+        <button class="p-2 bg-blue-500 text-white m-10 rounded-2xl hover:scale-110 transition-transform duration-300 hover:bg-red-400">Button7</button>
+
+        <!-- Apply effect over image -->
+         <img src="./images/image1.jpg" class="rounded m-16 w-52 hover:rotate-45 hover:scale-125 transition-transform duration-1000">
+
+    </div>
+   
+</body>
+</html>
